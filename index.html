@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +17,7 @@
         Besides enhancing my technical acumen, I've been immersing myself in the financial world, steadfastly advancing my understanding via multiple courses. My persuasion is that a firm grasp of finance is vital to thrive in contemporary business landscapes.
         Moreover, I have been honing my skills in content creation, a realm that demands both creativity and knowledge. I believe enigmatic and informative content is instrumental for a brand to flourish, hence I am keen to develop further in this area.
         Parallel to these, I have been actively contributing to the open-source community to both learn and give back. I am also keen on building new connections within the tech sphere, which I believe fuels the exchange of ideas and fosters innovation.
-        I am a staunch believer in continual learning and growth, and harbor interests in startups, technology exploration, and content creation, alongside my technical endeavors. I can't wait to see where my diverse skills and interests steer me in this expansive world of technology.</p>
+        I am a staunch believer in continual learning and growth, and harbor interests in startups, technology exploration, and content creation, alongside my technical endeavors. I can't wait to see where my diverse skills and interests steer me in this expansive world of technology.I will update myself here.</p>
   </section>
 
   <section id="skills">
@@ -53,5 +54,39 @@
         <a href="https://github.com/vibhavp6" target="_blank">GitHub</a>
     </p>
   </footer>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Welcome to Vibhav Pandey's Portfolio!</p>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+  
+    // Show the modal
+    window.onload = function() {
+      modal.style.display = "block";
+      span.style.display = "none"; // Hiding the close button initially
+  
+      // Modal will disappear after 5 seconds
+      setTimeout(function() {
+        modal.style.display = "none";
+        span.style.display = "inline";  // Making the close button visible again
+      }, 1000);  // 5000 ms = 5 seconds
+    }
+  
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
